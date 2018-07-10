@@ -1,8 +1,5 @@
 package models;
 
-
-import org.hibernate.annotations.CollectionId;
-
 import javax.persistence.*;
 
 @Entity
@@ -30,6 +27,10 @@ public class File {
     @Column(name = "id")
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Column(name = "name")
